@@ -6,7 +6,7 @@
     background-color: #0c0c0c;
 }
 
-.mesh-txt {
+.venda-curso__title p {
     font: normal normal normal 41px/52px Yantramanav;
     letter-spacing: 0.85px;
     text-align: center;
@@ -16,6 +16,7 @@
 .venda-curso__button {
     height: 250px;
     background-color: #f89d24;
+    width: 100vw;
 }
 
 .venda-curso__button p {
@@ -30,4 +31,40 @@
     border-radius: 5px;
     color: #f89d24;
     font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .venda-curso__title {
+        height: 372px;
+        width: 100vw;
+        position: absolute;
+    }
+    .venda-curso__title p {
+        max-width: 800px;
+        align-self: flex-start;
+        font: normal normal normal 54px/70px Yantramanav;
+        font-weight: bold;
+        letter-spacing: 1.13px;
+        text-transform: capitalize;
+    }
+    .venda-curso__button {
+        position: relative;
+        z-index: 99;
+        width: 538px;
+        height: 296px;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+    .venda-curso__button {
+        width: 338px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+    .venda-curso__title p {
+        font-size: 40px;
+        width: 380px;
+    }
 }
