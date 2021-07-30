@@ -1,0 +1,33 @@
+.venda-curso__title {
+    height: 297px;
+    width: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../src/background-mesh.svg);
+    background-color: #0c0c0c;
+}
+
+.mesh-txt {
+    font: normal normal normal 41px/52px Yantramanav;
+    letter-spacing: 0.85px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.venda-curso__button {
+    height: 250px;
+    background-color: #f89d24;
+}
+
+.venda-curso__button p {
+    font: normal normal normal 48px/62px Yantramanav;
+    padding-bottom: 24px;
+}
+
+.venda-curso__button button {
+    width: 203px;
+    height: 56px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #f89d24;
+    font-size: 16px;
+}
