@@ -1,0 +1,105 @@
+.description {
+    background: linear-gradient(
+        45deg,
+        rgba(26, 26, 26, 1) 48%,
+        rgba(44, 44, 44, 1) 100%
+    );
+}
+.description h2 + p {
+    max-width: 312px;
+    line-height: 26px;
+    padding-bottom: 50px;
+}
+.description span {
+    font-weight: bold;
+}
+.cards__info {
+    align-self: flex-start;
+}
+.card {
+    max-width: 253px;
+    border: 1px solid #6e6e6e;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    padding: 24px;
+}
+.card p {
+    padding: 7px 0 0 0;
+    text-align: left;
+    font: normal normal bold 16px/26px Yantramanav;
+    color: #b5b5b5;
+}
+.card__img {
+    padding: 26px 0;
+}
+.card__img img {
+    height: 96px;
+}
+.header-align {
+    padding-left: 11px;
+}
+.description .buttons {
+    padding-bottom: 58px;
+}
+@media screen and (min-width: 768px) {
+    .description {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+    .description h2 + p {
+        padding-bottom: 90px;
+        font-size: 18px;
+        max-width: 350px;
+    }
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 570px;
+        padding-top: 50px;
+    }
+    .cards__info {
+        max-width: 500px;
+    }
+    .card {
+        margin: 16px;
+    }
+    h2 {
+        font-size: 64px;
+        font-weight: bold;
+        letter-spacing: 1.34px;
+        width: 250px;
+        padding-top: 126px;
+    }
+    .header-align {
+        padding-left: 80px;
+    }
+    .top-square {
+        width: 205px;
+        height: 206px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .buttons button {
+        width: 130px;
+    }
+    .buttons {
+        justify-content: flex-start;
+    }
+    .header-align {
+        padding-left: 0px;
+    }
+    .card {
+        padding: 5px;
+        width: 150px;
+    }
+    .cards {
+        width: 370px;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .header-align {
+        padding-left: 10px;
+    }
+}

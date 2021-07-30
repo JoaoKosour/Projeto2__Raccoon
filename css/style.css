@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yantramanav", sans-serif;
+    color: white;
+}
+
+h2 {
+    font-size: 48px;
+    width: 187px;
+    padding-top: 43px;
+    padding-left: 11px;
+}
+h3 {
+    font: normal normal bold 14px/18px Yantramanav;
+    letter-spacing: 2px;
+    color: #f89d24;
+}
+
+.buttons {
+    flex-direction: column;
+}
+
+.buttons button {
+    width: 169px;
+    font-size: 16px;
+    height: 56px;
+    color: white;
+}
+
+button {
+    border: 1px white solid;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button + button {
+    border: none;
+    background-color: #f89d24;
+    margin-bottom: auto;
+    margin-top: 24px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-square {
+    height: 105px;
+    width: 105px;
+    background: none;
+    border: 2px solid #fec024;
+    border-top: none;
+    position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+    .buttons {
+        flex-direction: row;
+    }
+    button + button {
+        margin: 0 0 auto 30px;
+    }
+}
