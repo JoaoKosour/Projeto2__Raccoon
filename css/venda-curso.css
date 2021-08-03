@@ -1,6 +1,6 @@
 .venda-curso__title {
     height: 297px;
-    width: auto;
+    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url(../src/background-mesh.svg);
     background-color: #0c0c0c;
@@ -36,8 +36,7 @@
 @media screen and (min-width: 768px) {
     .venda-curso__title {
         height: 372px;
-        width: 100vw;
-        position: absolute;
+        position: relative;
     }
     .venda-curso__title p {
         max-width: 800px;
@@ -48,11 +47,14 @@
         text-transform: capitalize;
     }
     .venda-curso__button {
-        position: relative;
+        position: absolute;
         z-index: 99;
         width: 538px;
         height: 296px;
         align-self: flex-end;
+    }
+    .venda-curso__button button {
+        font-weight: bold;
     }
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,14 +10,14 @@
         <link rel="stylesheet" href="css/venda-curso.css" />
         <link rel="stylesheet" href="css/cards.css" />
         <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/expand.css" />
+        <link rel="stylesheet" href="css/professores.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300&display=swap" rel="stylesheet" />
         <title>Document</title>
     </head>
+
     <body>
         <header class="header-wrapper">
             <div class="header-logo">
@@ -29,8 +30,8 @@
                     do eiusmod tempor incididunt ut labore et dolore
                 </p>
                 <div class="buttons flex-container">
-                    <button>TENHO INTERESSE</button>
-                    <button>COMPRAR AGORA</button>
+                    <button class="button-interesse">TENHO INTERESSE</button>
+                    <button class="button-comprar">COMPRAR AGORA</button>
                 </div>
             </div>
         </header>
@@ -39,8 +40,7 @@
                 <div class="top-square"></div>
                 <h2 class="header-align">Sem clientes?</h2>
                 <p class="header-align">
-                    <span>Esta seção visa explicar resumidamente o curso.</span
-                    ><br />
+                    <span>Esta seção visa explicar resumidamente o curso.</span><br />
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Bibendum est ultricies integer quis. Iaculis urna id
@@ -48,17 +48,14 @@
                     malesuada. Ac odio tempor
                 </p>
                 <div class="buttons flex-container desktop header-align">
-                    <button>TENHO INTERESSE</button>
-                    <button>COMPRAR AGORA</button>
+                    <button class="button-interesse">TENHO INTERESSE</button>
+                    <button class="button-comprar">COMPRAR AGORA</button>
                 </div>
             </div>
             <div class="cards flex-container">
                 <div class="card">
                     <div class="card__img flex-container">
-                        <img
-                            src="src/mind.png"
-                            alt="imagem de cabeca pensante"
-                        />
+                        <img src="src/mind.png" alt="imagem de cabeca pensante" />
                     </div>
                     <h3>OBJETIVO</h3>
                     <p>
@@ -68,10 +65,7 @@
                 </div>
                 <div class="card">
                     <div class="card__img flex-container">
-                        <img
-                            src="src/mind.png"
-                            alt="imagem de cabeca pensante"
-                        />
+                        <img src="src/mind.png" alt="imagem de cabeca pensante" />
                     </div>
                     <h3>METODOLOGIA</h3>
                     <p>
@@ -81,10 +75,7 @@
                 </div>
                 <div class="card">
                     <div class="card__img flex-container">
-                        <img
-                            src="src/mind.png"
-                            alt="imagem de cabeca pensante"
-                        />
+                        <img src="src/mind.png" alt="imagem de cabeca pensante" />
                     </div>
                     <h3>METODOLOGIA</h3>
                     <p>
@@ -94,10 +85,7 @@
                 </div>
                 <div class="card">
                     <div class="card__img flex-container">
-                        <img
-                            src="src/mind.png"
-                            alt="imagem de cabeca pensante"
-                        />
+                        <img src="src/mind.png" alt="imagem de cabeca pensante" />
                     </div>
                     <h3>METODOLOGIA</h3>
                     <p>
@@ -107,8 +95,8 @@
                 </div>
             </div>
             <div class="buttons flex-container mobile header-align">
-                <button>TENHO INTERESSE</button>
-                <button>COMPRAR AGORA</button>
+                <button class="button-interesse">TENHO INTERESSE</button>
+                <button class="button-comprar">COMPRAR AGORA</button>
             </div>
         </section>
         <section class="venda-curso flex-container">
@@ -120,5 +108,181 @@
                 <button>FAZER O CURSO</button>
             </div>
         </section>
+        <section class="expand padding-container">
+            <div class="top-square mobile"></div>
+            <h2 class="mobile">O que você Aprenderá</h2>
+            <div class="competencia-expand">
+                <div class="competencia__box active">
+                    <div class="competencia__header flex-container">
+                        <h4>Competência 1</h4>
+                    </div>
+                    <div class="competencia__info mobile">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Bibendum est ultricies integer quis.
+                            Iaculis urna id volutpat lacus laoreet.
+                        </p>
+                    </div>
+                </div>
+                <div class="competencia__box">
+                    <div class="competencia__header flex-container">
+                        <h4>Competência 2</h4>
+                    </div>
+                    <div class="competencia__info mobile">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Bibendum est ultricies integer quis.
+                            Iaculis urna id volutpat lacus laoreet.
+                        </p>
+                    </div>
+                </div>
+                <div class="competencia__box">
+                    <div class="competencia__header flex-container">
+                        <h4>Competência 3</h4>
+                    </div>
+                    <div class="competencia__info mobile">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Bibendum est ultricies integer quis.
+                            Iaculis urna id volutpat lacus laoreet.
+                        </p>
+                    </div>
+                </div>
+                <div class="competencia__box">
+                    <div class="competencia__header flex-container">
+                        <h4>Competência 4</h4>
+                    </div>
+                    <div class="competencia__info mobile">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Bibendum est ultricies integer quis.
+                            Iaculis urna id volutpat lacus laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-info desktop flex-container">
+                <p><span>Esta seção visa explicar as competências que os alunos possuirão uma vez que concluírem o
+                        curso. </span> Esta seção visa
+                    explicar as competências que os alunos possuirão uma vez que concluírem o curso.
+                    Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Bibendum est
+                    ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris.</p>
+                <div>
+                    <button>TENHO INTERESSE</button>
+                    <button>COMPRAR AGORA</button>
+                </div>
+            </div>
+            </div>
+            <div class="buttons flex-container mobile">
+                <button class="button-interesse">TENHO INTERESSE</button>
+                <button class="button-comprar">COMPRAR AGORA</button>
+            </div>
+        </section>
+        <section class="professores padding-container">
+            <div class="top-square"></div>
+            <h2>Nossos Professores</h2>
+            <div class="professores__cards flex-container">
+                <div class="flex-container">
+                    <div class="professores__card card">
+                        <div class="flex-container">
+                            <img src="src/professor.png" alt="imagem de cabeca pensante" />
+                        </div>
+                        <h3>FULANO DE TAL, <br>phd em comunicação</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna
+                            aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris
+                            vitae
+                            ultricies
+                        </p>
+                    </div>
+                    <div class="professores__card card">
+                        <div class="flex-container">
+                            <img src="src/professor.png" alt="imagem de cabeca pensante" />
+                        </div>
+                        <h3>FULANO DE TAL, <br>phd em comunicação</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna
+                            aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris
+                            vitae
+                            ultricies
+                        </p>
+                    </div>
+                    <div class="professores__card card">
+                        <div class="flex-container">
+                            <img src="src/professor.png" alt="imagem de cabeca pensante" />
+                        </div>
+                        <h3>FULANO DE TAL, <br>phd em comunicação</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna
+                            aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris
+                            vitae
+                            ultricies
+                        </p>
+                    </div>
+                </div>
+                <div class="desktop flex-container">
+                    <div class="professores__card card">
+                        <div class="flex-container">
+                            <img src="src/professor.png" alt="imagem de cabeca pensante" />
+                        </div>
+                        <h3>FULANO DE TAL, <br>phd em comunicação</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna
+                            aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris
+                            vitae
+                            ultricies
+                        </p>
+                    </div>
+                    <div class="professores__card card">
+                        <div class="flex-container">
+                            <img src="src/professor.png" alt="imagem de cabeca pensante" />
+                        </div>
+                        <h3>FULANO DE TAL, <br>phd em comunicação</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna
+                            aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris
+                            vitae
+                            ultricies
+                        </p>
+                    </div>
+                    <div class="professores__card card">
+                        <div class="flex-container">
+                            <img src="src/professor.png" alt="imagem de cabeca pensante" />
+                        </div>
+                        <h3>FULANO DE TAL, <br> phd em comunicação</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna
+                            aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris
+                            vitae
+                            ultricies
+                        </p>
+                    </div>
+                </div>
+                <div class="buttons flex-container">
+                    <button class="button-interesse">TENHO INTERESSE</button>
+                    <button class="button-comprar">COMPRAR AGORA</button>
+                </div>
+            </div>
+        </section>
+        <script src="script/script.js"></script>
     </body>
+
 </html>

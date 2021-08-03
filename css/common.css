@@ -499,7 +499,7 @@ body .glider-dot {
 
 @media (min-width: 768px) {
     .desktop {
-        display: flex;
+        display: block;
     }
 
     .mobile {

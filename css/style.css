@@ -2,58 +2,55 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 body {
     font-family: "Yantramanav", sans-serif;
     color: white;
 }
-
 h2 {
+    position: relative;
     font-size: 48px;
-    width: 187px;
     padding-top: 43px;
     padding-left: 11px;
+    z-index: 1;
 }
 h3 {
     font: normal normal bold 14px/18px Yantramanav;
     letter-spacing: 2px;
     color: #f89d24;
+    text-transform: uppercase;
 }
-
 .buttons {
     flex-direction: column;
 }
-
 .buttons button {
     width: 169px;
     font-size: 16px;
     height: 56px;
     color: white;
 }
-
-button {
+.button-interesse {
     border: 1px white solid;
     background: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
 }
-
-button + button {
+.button-comprar {
     border: none;
     background-color: #f89d24;
     margin-bottom: auto;
     margin-top: 24px;
+    border-radius: 5px;
 }
-
 .flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .top-square {
     height: 105px;
     width: 105px;
@@ -61,13 +58,14 @@ button + button {
     border: 2px solid #fec024;
     border-top: none;
     position: absolute;
+    z-index: 0;
 }
 
 @media screen and (min-width: 768px) {
     .buttons {
         flex-direction: row;
     }
-    button + button {
+    .button-comprar {
         margin: 0 0 auto 30px;
     }
 }

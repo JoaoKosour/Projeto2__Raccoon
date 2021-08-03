@@ -5,6 +5,9 @@
         rgba(44, 44, 44, 1) 100%
     );
 }
+.description h2 {
+    width: 187px;
+}
 .description h2 + p {
     max-width: 312px;
     line-height: 26px;
