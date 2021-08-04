@@ -6,6 +6,14 @@
     );
 }
 
+.professores h2 {
+    padding-bottom: 24px;
+}
+
+.professores .buttons {
+    padding: 48px 0px;
+}
+
 .professores__cards .card img {
     height: 234px;
     width: 315px;
@@ -20,6 +28,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .professores h2 {
+        padding-bottom: 75px;
+    }
     .professores__cards .flex-container {
         display: flex;
         flex-direction: row;
@@ -27,6 +38,9 @@
     .professores__cards .card {
         height: 500px;
         max-width: none;
+    }
+    .professores .buttons {
+        padding: 75px 0px;
     }
 }
 

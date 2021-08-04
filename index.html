@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/venda-curso.css" />
@@ -12,9 +13,15 @@
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/expand.css" />
         <link rel="stylesheet" href="css/professores.css" />
+        <link rel="stylesheet" href="css/carousel.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300&display=swap" rel="stylesheet" />
+
         <title>Document</title>
     </head>
 
@@ -186,7 +193,7 @@
         </section>
         <section class="professores padding-container">
             <div class="top-square"></div>
-            <h2>Nossos Professores</h2>
+            <h2 class="header-align">Nossos <br> Professores</h2>
             <div class="professores__cards flex-container">
                 <div class="flex-container">
                     <div class="professores__card card">
@@ -282,7 +289,33 @@
                 </div>
             </div>
         </section>
+        <section class="carousel">
+            <div id="carousel__card" class="flex-container padding-container">
+                <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
+                    mesmo"</p>
+                <h3>fulano de tal, <br> médico muito conceituado</h3>
+            </div>
+            <div id="carousel__card" class="flex-container padding-container">
+                <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
+                    mesmo"</p>
+                <h3>fulano de tal, <br> médico muito conceituado</h3>
+            </div>
+            <div id="carousel__card" class="flex-container padding-container">
+                <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
+                    mesmo"</p>
+                <h3>fulano de tal, <br> médico muito conceituado</h3>
+            </div>
+            <div id="carousel__card" class="flex-container padding-container">
+                <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
+                    mesmo"</p>
+                <h3>fulano de tal, <br> médico muito conceituado</h3>
+            </div>
+        </section>
         <script src="script/script.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+        <script>$('.carousel').slick();</script>
     </body>
 
 </html>

@@ -1,0 +1,56 @@
+.carousel {
+    height: 100vh;
+}
+
+.carousel > .slick-prev {
+    left: 10px;
+    z-index: 1;
+}
+.carousel > .slick-next {
+    right: 10px;
+    z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+#carousel__card {
+    display: flex;
+    background: url(../src/carousel.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#carousel__card p {
+    font: normal normal normal 41px/52px Yantramanav;
+    letter-spacing: 0.85px;
+    padding-bottom: 24px;
+}
+
+#carousel__card p,
+#carousel__card h3 {
+    position: relative;
+    z-index: 99;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .slick-prev:before,
+    .slick-next:before {
+        display: block;
+    }
+    #carousel__card {
+        display: flex;
+        background: url(../src/carousel-desktop.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    #carousel__card h3 {
+        align-self: flex-end;
+        text-align: right;
+    }
+}

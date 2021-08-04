@@ -2,15 +2,12 @@
     background: url(../src/expand-bg.png);
     background-repeat: no-repeat;
 }
-
 .expand h2 {
     width: 227px;
 }
-
 .competencia-expand {
     padding: 32px 0;
 }
-
 .competencia__header {
     position: relative;
     width: auto;
@@ -28,41 +25,34 @@
     transform: translateY(-50%);
     right: 24px;
 }
-
 .competencia__header h4 {
     font: normal normal 100 18px/31px Yantramanav;
     align-self: flex-start;
 }
-
 .competencia__info {
     background: #262626;
     max-height: 0;
     transition: max-height 0.3s ease-out;
     overflow: hidden;
 }
-
 .competencia__info p {
     text-align: left;
     font: normal normal 300 18px Yantramanav;
     height: 100%;
     padding: 24px 16px;
 }
-
 .competencia__box.active .competencia__info {
     border-top: 1px orange solid;
     border-bottom: 2px orange solid;
     max-height: 500px;
     transition: max-height 0.3s ease-in;
 }
-
 .competencia__box.active .competencia__header h4 {
     font: normal normal bold 18px Yantramanav;
 }
-
 .expand .button-comprar {
     margin-bottom: 30px;
 }
-
 @media screen and (min-width: 768px) {
     .expand {
         background: url(../src/expand-bg-desktop.png);
@@ -76,12 +66,22 @@
         display: flex;
     }
     .competencia__header {
+        padding-left: 60px;
         width: 378px;
         height: 90.5px;
     }
     .competencia__header h4 {
         font: normal normal normal 32px/41px Yantramanav;
         letter-spacing: 0.67px;
+    }
+    .competencia__box.active .competencia__header::after {
+        content: "";
+        background: #f89d24;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 80%;
+        height: 2px;
     }
     .competencia__box.active .competencia__header h4 {
         font: normal normal bold 32px/41px Yantramanav;
@@ -117,13 +117,11 @@
         padding-left: 30px;
     }
 }
-
 @media screen and (min-width: 768px) and (max-width: 927px) {
     .desktop-info button + button {
         padding: 0;
     }
 }
-
 @media screen and (min-width: 768px) and (max-width: 810px) {
     .desktop-info p {
         font-size: 14px;

@@ -7,9 +7,7 @@ expand.forEach((node) => {
             e.currentTarget.classList.remove("active");
         //se o elemento atual nao esta ativo, desativa todos os outros elementos e ativa ele
         else {
-            expand.forEach((node) => {
-                node.classList.remove("active");
-            });
+            expand.forEach((node) => node.classList.remove("active"));
             e.currentTarget.classList.add("active");
         }
     });
