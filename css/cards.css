@@ -13,9 +13,6 @@
     line-height: 26px;
     padding-bottom: 50px;
 }
-.description span {
-    font-weight: bold;
-}
 .cards__info {
     align-self: flex-start;
 }

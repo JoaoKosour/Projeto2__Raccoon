@@ -101,9 +101,6 @@
         flex-direction: column;
         padding: 0 73px;
     }
-    .desktop-info span {
-        font-weight: bold;
-    }
     .desktop-info button {
         height: 18px;
         background: none;

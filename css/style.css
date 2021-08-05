@@ -22,6 +22,9 @@ h3 {
     color: #f89d24;
     text-transform: uppercase;
 }
+span {
+    font-weight: bold;
+}
 .buttons {
     flex-direction: column;
 }
@@ -55,7 +58,7 @@ h3 {
     height: 105px;
     width: 105px;
     background: none;
-    border: 2px solid #fec024;
+    border: 1px solid #d39e18;
     border-top: none;
     position: absolute;
     z-index: 0;
