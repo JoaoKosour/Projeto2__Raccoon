@@ -58,6 +58,7 @@
     flex: 1;
 }
 .modal__check {
+    font: normal normal normal 16px/19px Lato;
     flex-direction: row;
     padding-bottom: 54px;
 }
@@ -65,10 +66,9 @@
     width: 14px;
     height: 15px;
     margin-right: 10px;
-    margin-bottom: 2px;
 }
 .modal__check label {
-    margin-right: 76px;
+    margin-right: 70px;
 }
 .modal__check label span {
     text-decoration: underline;
