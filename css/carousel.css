@@ -37,7 +37,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .slick-prev:before,
     .slick-next:before {
         display: block;
@@ -52,5 +52,16 @@
     #carousel__card h3 {
         align-self: flex-end;
         text-align: right;
+    }
+}
+
+@media (max-height: 700px) {
+    .carousel {
+        height: 130vh;
+        max-height: 130vh;
+    }
+    #carousel__card {
+        height: 130vh;
+        max-height: 130vh;
     }
 }

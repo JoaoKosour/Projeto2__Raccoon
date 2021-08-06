@@ -33,7 +33,7 @@
     max-width: 800px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .header-wrapper p {
         font: normal normal 300 18px/26px Yantramanav;
         margin: 0;
@@ -51,5 +51,12 @@
     }
     .header-main {
         height: calc(100vh - 52px);
+    }
+}
+
+@media (max-height: 700px) {
+    .header-wrapper {
+        height: 130vh;
+        max-height: 130vh;
     }
 }

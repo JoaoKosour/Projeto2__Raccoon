@@ -53,7 +53,7 @@
 .expand .button-comprar {
     margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .expand {
         background: url(../src/expand-bg-desktop.png);
         background-size: cover;
@@ -114,12 +114,12 @@
         padding-left: 30px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 927px) {
+@media (min-width: 768px) and (max-width: 927px) {
     .desktop-info button + button {
         padding: 0;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 810px) {
+@media (min-width: 768px) and (max-width: 810px) {
     .desktop-info p {
         font-size: 14px;
     }

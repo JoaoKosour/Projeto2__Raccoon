@@ -288,14 +288,14 @@ html {
     margin-right: -20px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 424px) {
     .negative-container {
         margin-left: -20px;
         margin-right: -20px;
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .null-container {
         margin-left: 0;
         margin-right: 0;

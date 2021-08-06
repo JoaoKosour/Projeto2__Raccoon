@@ -41,7 +41,7 @@
 .description .buttons {
     padding-bottom: 58px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .description {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -79,7 +79,7 @@
         height: 206px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1000px) {
     .buttons button {
         width: 130px;
     }
@@ -98,8 +98,15 @@
         padding-top: 10px;
     }
 }
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
+@media (min-width: 1000px) and (max-width: 1300px) {
     .header-align {
         padding-left: 10px;
+    }
+}
+
+@media (max-height: 700px) {
+    .description {
+        height: 150vh;
+        max-height: 150vh;
     }
 }

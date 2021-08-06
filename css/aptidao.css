@@ -15,7 +15,7 @@
     padding: 18px 0 52px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .aptidao {
         background: linear-gradient(
             45deg,
@@ -52,8 +52,19 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1000px) {
     .aptidao-info {
         padding-left: 30%;
+    }
+}
+
+@media (max-height: 700px) {
+    .aptidao {
+        height: 130vh;
+        max-height: 130vh;
+    }
+    .aptidao img {
+        height: calc(130vh - 48px);
+        max-height: calc(130vh - 48px);
     }
 }
