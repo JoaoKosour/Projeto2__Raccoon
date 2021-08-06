@@ -1,5 +1,6 @@
 .aptidao {
-    background: url(../src/apto.png), #0c0c0c;
+    background: url(../src/apto.png),
+        linear-gradient(45deg, rgba(26, 26, 26, 1) 0%, rgba(44, 44, 44, 1) 100%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -12,4 +13,47 @@
     letter-spacing: 0px;
     color: #b5b5b5;
     padding: 18px 0 52px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .aptidao {
+        background: linear-gradient(
+            45deg,
+            rgba(26, 26, 26, 1) 0%,
+            rgba(44, 44, 44, 1) 100%
+        );
+        max-height: 100vh;
+        border-bottom: 24px solid rgb(20, 20, 20);
+        border-top: 24px solid rgb(3, 3, 3);
+    }
+    .aptidao img {
+        position: absolute;
+        background-repeat: no-repeat;
+        height: calc(100vh - 48px);
+        max-height: calc(100vh - 48px);
+    }
+    .aptidao-info {
+        padding-left: 60%;
+        max-height: 100vh;
+    }
+
+    .aptidao .top-square {
+        margin-left: 10%;
+    }
+    .aptidao-info .header-align {
+        padding-left: 0;
+    }
+    .aptidao-info p {
+        max-width: 350px;
+        font: normal normal 300 18px/26px Yantramanav;
+    }
+    .aptidao-info .buttons {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .aptidao-info {
+        padding-left: 30%;
+    }
 }

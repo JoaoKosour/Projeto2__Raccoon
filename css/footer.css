@@ -1,0 +1,35 @@
+footer {
+    background-color: #000000;
+    height: 186px;
+}
+
+.footer-direitos {
+    font: normal normal bold 16px Yantramanav;
+    padding-bottom: 44px;
+    color: #b5b5b5;
+}
+
+.footer p {
+    font: normal normal bold 16px Yantramanav;
+    color: #b5b5b5;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .adicional {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .footer p {
+        font: normal normal 300 18px/26px Yantramanav;
+        padding: 0 16px;
+    }
+    .footer .footer-direitos {
+        font: normal normal bold 16px Yantramanav;
+        padding-bottom: 0;
+    }
+}

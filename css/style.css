@@ -25,6 +25,12 @@ h3 {
 span {
     font-weight: bold;
 }
+
+a,
+button {
+    cursor: pointer;
+    z-index: 99;
+}
 .buttons {
     flex-direction: column;
 }
@@ -41,6 +47,11 @@ span {
     cursor: pointer;
     font-weight: bold;
 }
+button:active {
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.3);
+    transform: translateY(4px);
+}
+
 .button-comprar {
     border: none;
     background-color: #f89d24;

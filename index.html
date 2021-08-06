@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/carousel.css" />
         <link rel="stylesheet" href="css/metodologia.css" />
         <link rel="stylesheet" href="css/aptidao.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/modal.css" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
@@ -23,6 +25,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet" />
 
         <title>Document</title>
     </head>
@@ -354,21 +357,55 @@
                 <button class="button-comprar">COMPRAR AGORA</button>
             </div>
         </section>
-        <section class="aptidao padding-container">
-            <div class="top-square"></div>
-            <h2 class="header-align">Eu estou Apto?</h2>
-            <p class="header-align"> <span> Esta seção visa explicar as metodologias de ensino empregadas.</span>
-                Lorem ipsum dolor sit
-                amet,
-                consectetur
-                adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer
-                quis.
-                Iaculis urna id
-                volutpat lacus laoreet. Mauris vitae.</p>
-            <div class="buttons flex-container">
-                <button class="button-interesse">TENHO INTERESSE</button>
-                <button class="button-comprar">COMPRAR AGORA</button>
+        <section class="aptidao">
+            <div><img class="desktop" src="src/apto-desktop.png" alt=""></div>
+            <div class="aptidao-info padding-container">
+                <div class="top-square"></div>
+                <h2 class="header-align">Eu estou Apto?</h2>
+                <p class="header-align"> <span> Esta seção visa explicar as metodologias de ensino empregadas.</span>
+                    Lorem ipsum dolor sit
+                    amet,
+                    consectetur
+                    adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer
+                    quis.
+                    Iaculis urna id
+                    volutpat lacus laoreet. Mauris vitae.</p>
+                <div class="buttons flex-container">
+                    <button class="button-interesse">TENHO INTERESSE</button>
+                    <button class="button-comprar">COMPRAR AGORA</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer padding-container flex-container">
+            <div class="flex-container">
+                <p class="footer-direitos">Synapse ₢ Todos os direitos reservados</p>
+                <p class="mobile">Texto Adicional</p>
+            </div>
+            <div class="adicional flex-container">
+                <p class="desktop">Texto Adicional 2</p>
+                <p class="desktop">Texto Adicional 2</p>
+                <p class="desktop">Texto Adicional 3</p>
+            </div>
+        </footer>
+        <section class="modal flex-container">
+
+            <div class="modal__form  flex-container">
+                <span id="close">x</span>
+                <h5>LOREM</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore</p>
+                <input type="text" name="inputBox" placeholder="Nome">
+                <input type="text" name="inputBox" placeholder="Telefone">
+                <input type="text" name="inputBox" placeholder="E-mail">
+                <input type="text" name="inputBox" placeholder="Profissão">
+                <div class="modal__check flex-container">
+                    <input type="checkbox">
+                    <label for=""> Li e aceito os <span> termos de uso.</span></label>
+                </div>
+                <div class="buttons flex-container">
+                    <button class="button-comprar">DECLARAR INTERESSE</button>
+                </div>
             </div>
         </section>
         <script src="script/script.js"></script>
