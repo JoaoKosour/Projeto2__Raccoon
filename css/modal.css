@@ -75,3 +75,36 @@
     font: normal normal normal 16px/19px Lato;
     letter-spacing: 0.15px;
 }
+
+@media (max-width: 768px) {
+    .modal__form p {
+        width: 90%;
+        text-align: center;
+        font: normal normal 300 14px Lato;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .modal__form {
+        background: #232323;
+        width: 90%;
+        height: 90%;
+        border-radius: 5px;
+    }
+    .modal__text-inputs input {
+        width: 250px;
+    }
+    .modal__check {
+        font: normal normal normal 14px Lato;
+        flex-direction: row;
+        padding-bottom: 5px;
+    }
+    .modal__check label {
+        margin-right: 0;
+    }
+    .modal__check label span {
+        font: normal normal normal 14px Lato;
+    }
+    .modal .buttons {
+        flex: 0;
+    }
+}
