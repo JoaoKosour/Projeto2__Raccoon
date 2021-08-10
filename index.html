@@ -189,7 +189,7 @@
                     aliqua. Bibendum est
                     ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris.</p>
                 <div>
-                    <button>TENHO INTERESSE</button>
+                    <button class="button-interesse">TENHO INTERESSE</button>
                     <button>COMPRAR AGORA</button>
                 </div>
             </div>
@@ -400,22 +400,24 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore</p>
                 <div class="modal__text-inputs flex-container">
-                    <input type="text" name="nome" placeholder="Nome" required>
-                    <input type="text" name="tel" placeholder="Telefone" required>
-                    <input type="text" name="email" placeholder="E-mail" required
+                    <input id="input-name" type="text" name="nome" placeholder="Nome" required>
+                    <input id="input-tel" type="text" name="tel" placeholder="Telefone" required>
+                    <input id="input-cpf" type="text" name="cpf" placeholder="CPF" required>
+                    <input id="input-email" type="text" name="email" placeholder="E-mail" required
                         pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
-                    <input type="text" name="profissao" placeholder="Profissão" required>
                 </div>
                 <div class="modal__check flex-container">
-                    <input type="checkbox">
-                    <label for=""> Li e aceito os <span> termos de uso.</span></label>
+                    <input type="checkbox" id="accept">
+                    <label for="accept"> Li e aceito os <span> termos de uso.</span></label>
                 </div>
                 <div class="buttons flex-container">
-                    <button class="button-comprar">DECLARAR INTERESSE</button>
+                    <button id="submit-btn" class="button-comprar">DECLARAR INTERESSE</button>
                 </div>
             </div>
         </section>
         <script src="script/script.js"></script>
+        <script src="script/mask.js"></script>
+        <script src="script/validacao.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>

@@ -104,7 +104,7 @@
     }
 }
 
-@media (max-height: 700px) {
+@media (min-width: 768px) and (max-height: 700px) {
     .description {
         height: 150vh;
         max-height: 150vh;

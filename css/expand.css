@@ -1,5 +1,6 @@
 .expand {
     background: url(../src/expand-bg.png);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .expand h2 {
@@ -105,6 +106,7 @@
         height: 18px;
         background: none;
         color: white;
+        border: none;
         font: normal normal bold 14px Yantramanav;
         letter-spacing: 2px;
         padding-top: 10px;
