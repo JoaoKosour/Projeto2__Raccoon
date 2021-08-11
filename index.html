@@ -298,25 +298,61 @@
             </div>
         </section>
         <section class="carousel">
-            <div class="flex-container padding-container carousel__card">
-                <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
-                    mesmo"</p>
-                <h3>fulano de tal, <br> médico muito conceituado</h3>
+            <!-- utilizamos id no carousel__card para sobrepor os estilos do slick  -->
+            <div id="carousel__card" class="flex-container padding-container ">
+                <div class="carousel__text">
+                    <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
+                        mesmo"</p>
+                    <h3>fulano de tal, <br> médico muito conceituado</h3>
+                </div>
+                <div class="dots flex-container">
+                    <span></span>
+                    <p>+</p>
+                    <p>+</p>
+                    <p>+</p>
+
+                </div>
             </div>
-            <div class="flex-container padding-container carousel__card">
-                <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
-                    mesmo"</p>
-                <h3>fulano de tal, <br> médico muito conceituado</h3>
+            <div id="carousel__card" class="flex-container padding-container carousel__card">
+                <div class="carousel__text">
+                    <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
+                        mesmo"</p>
+                    <h3>fulano de tal, <br> médico muito conceituado</h3>
+                </div>
+                <div class="dots flex-container">
+                    <p>+</p>
+                    <span></span>
+                    <p>+</p>
+                    <p>+</p>
+
+                </div>
             </div>
-            <div class="flex-container padding-container carousel__card">
-                <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
-                    mesmo"</p>
-                <h3>fulano de tal, <br> médico muito conceituado</h3>
+            <div id="carousel__card" class="flex-container padding-container carousel__card">
+                <div class="carousel__text">
+                    <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
+                        mesmo"</p>
+                    <h3>fulano de tal, <br> médico muito conceituado</h3>
+                </div>
+                <div class="dots flex-container">
+                    <p>+</p>
+                    <p>+</p>
+                    <span></span>
+                    <p>+</p>
+
+                </div>
             </div>
-            <div class="flex-container padding-container carousel__card">
-                <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
-                    mesmo"</p>
-                <h3>fulano de tal, <br> médico muito conceituado</h3>
+            <div id="carousel__card" class="flex-container padding-container carousel__card">
+                <div class="carousel__text">
+                    <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
+                        mesmo"</p>
+                    <h3>fulano de tal, <br> médico muito conceituado</h3>
+                </div>
+                <div class="dots flex-container">
+                    <p>+</p>
+                    <p>+</p>
+                    <p>+</p>
+                    <span></span>
+                </div>
             </div>
         </section>
         <section class="metodologia padding-container">
@@ -421,7 +457,9 @@
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-        <script>$('.carousel').slick(
+        <script>$('.carousel').slick({
+                arrows: true,
+            }
             );</script>
     </body>
 

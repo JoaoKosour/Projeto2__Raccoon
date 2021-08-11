@@ -66,6 +66,12 @@
     width: 14px;
     height: 15px;
     margin-right: 10px;
+    -webkit-appearance: none;
+    background-color: none;
+    border: 2px solid #f89d24;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
 }
 .modal__check label {
     margin-right: 70px;
@@ -74,6 +80,11 @@
     text-decoration: underline;
     font: normal normal normal 16px/19px Lato;
     letter-spacing: 0.15px;
+}
+
+.modal__check input:checked {
+    background-color: #f89d24;
+    border: 1px solid #f89d24;
 }
 
 @media (max-width: 768px) {

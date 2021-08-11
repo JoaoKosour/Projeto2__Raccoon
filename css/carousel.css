@@ -1,5 +1,5 @@
 .carousel {
-    height: 100vh;
+    height: 610px;
 }
 
 .carousel > .slick-prev {
@@ -16,43 +16,71 @@
     display: none;
 }
 
-.carousel__card {
+#carousel__card {
     display: flex;
+    justify-content: space-between;
     background: url(../src/carousel.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 610px;
 }
 
-.carousel__card p {
+#carousel__card p {
     font: normal normal normal 41px/52px Yantramanav;
     letter-spacing: 0.85px;
     padding-bottom: 24px;
 }
 
-.carousel__card p,
-.carousel__card h3 {
+#carousel__card p,
+#carousel__card h3 {
     position: relative;
     z-index: 99;
     text-align: center;
 }
+.carousel__text {
+    padding-top: 40%;
+}
+
+.dots {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 50px;
+}
+#carousel__card .dots p {
+    color: gray;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-bottom: 0;
+}
+#carousel__card .dots span {
+    width: 36px;
+    height: 2px;
+    background-color: white;
+}
 
 @media (min-width: 768px) {
+    .carousel {
+        height: 100vh;
+    }
     .slick-prev:before,
     .slick-next:before {
         display: block;
     }
-    .carousel__card {
+    #carousel__card {
         display: flex;
         background: url(../src/carousel-desktop.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        height: 100vh;
         z-index: 112;
+        height: 100vh;
     }
-    .carousel__card h3 {
+    #carousel__card h3 {
         align-self: flex-end;
         text-align: right;
+    }
+    .carousel__text {
+        padding-top: 35%;
     }
 }
 
@@ -61,7 +89,7 @@
         height: 130vh;
         max-height: 130vh;
     }
-    .carousel__card {
+    #carousel__card {
         height: 130vh;
         max-height: 130vh;
     }
