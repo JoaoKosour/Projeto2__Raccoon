@@ -299,59 +299,41 @@
         </section>
         <section class="carousel">
             <!-- utilizamos id no carousel__card para sobrepor os estilos do slick  -->
-            <div id="carousel__card" class="flex-container padding-container ">
+
+            <div id="carousel__card flex-container">
+                <div class="mobile carousel__img"><img src="./src/carousel.png" alt=""></div>
+                <div class="desktop carousel__img"><img src="./src/carousel-desktop.png" alt=""></div>
                 <div class="carousel__text">
                     <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
                         mesmo"</p>
                     <h3>fulano de tal, <br> médico muito conceituado</h3>
-                </div>
-                <div class="dots flex-container">
-                    <span></span>
-                    <p>+</p>
-                    <p>+</p>
-                    <p>+</p>
-
                 </div>
             </div>
-            <div id="carousel__card" class="flex-container padding-container carousel__card">
+            <div id="carousel__card flex-container">
+                <div class="mobile carousel__img"><img src="./src/carousel.png" alt=""></div>
+                <div class="desktop carousel__img"><img src="./src/carousel-desktop.png" alt=""></div>
                 <div class="carousel__text">
                     <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
                         mesmo"</p>
                     <h3>fulano de tal, <br> médico muito conceituado</h3>
-                </div>
-                <div class="dots flex-container">
-                    <p>+</p>
-                    <span></span>
-                    <p>+</p>
-                    <p>+</p>
-
                 </div>
             </div>
-            <div id="carousel__card" class="flex-container padding-container carousel__card">
+            <div id="carousel__card flex-container">
+                <div class="mobile carousel__img"><img src="./src/carousel.png" alt=""></div>
+                <div class="desktop carousel__img"><img src="./src/carousel-desktop.png" alt=""></div>
                 <div class="carousel__text">
                     <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
                         mesmo"</p>
                     <h3>fulano de tal, <br> médico muito conceituado</h3>
-                </div>
-                <div class="dots flex-container">
-                    <p>+</p>
-                    <p>+</p>
-                    <span></span>
-                    <p>+</p>
-
                 </div>
             </div>
-            <div id="carousel__card" class="flex-container padding-container carousel__card">
+            <div id="carousel__card flex-container">
+                <div class="mobile carousel__img"><img src="./src/carousel.png" alt=""></div>
+                <div class="desktop carousel__img"><img src="./src/carousel-desktop.png" alt=""></div>
                 <div class="carousel__text">
                     <p>"Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom
                         mesmo"</p>
                     <h3>fulano de tal, <br> médico muito conceituado</h3>
-                </div>
-                <div class="dots flex-container">
-                    <p>+</p>
-                    <p>+</p>
-                    <p>+</p>
-                    <span></span>
                 </div>
             </div>
         </section>
@@ -458,7 +440,10 @@
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
         <script>$('.carousel').slick({
-                arrows: true,
+                infinite: false,
+                dots: true,
+                prevArrow: true,
+                nextArrow: true
             }
             );</script>
     </body>

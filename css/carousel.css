@@ -4,49 +4,62 @@
 
 .carousel > .slick-prev {
     left: 10px;
-    z-index: 111;
 }
 .carousel > .slick-next {
     right: 10px;
-    z-index: 111;
 }
 
 .slick-prev:before,
 .slick-next:before {
     display: none;
 }
-
-#carousel__card {
-    display: flex;
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
+#carousel__card,
+.slick-slide {
+    position: relative;
     justify-content: space-between;
-    background: url(../src/carousel.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    width: 1;
     height: 610px;
 }
 
-#carousel__card p {
-    font: normal normal normal 41px/52px Yantramanav;
+.slick-dots {
+    bottom: 0 !important;
+    margin-bottom: 0;
+    color: white !important;
+    padding-bottom: 30px !important;
+}
+.slick-dots li.slick-active button:before {
+    color: rgb(255, 255, 255) !important;
+}
+.slick-dots li button:before {
+    color: rgb(177, 177, 177) !important;
+}
+.carousel__img img {
+    background-repeat: no-repeat;
+    height: 610px;
+    width: 100vw;
+}
+
+.carousel__text p {
+    font: normal normal normal 36px Yantramanav;
     letter-spacing: 0.85px;
     padding-bottom: 24px;
 }
 
-#carousel__card p,
-#carousel__card h3 {
-    position: relative;
-    z-index: 99;
+.carousel__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    max-width: 100vw;
+}
+.carousel__text h3 {
     text-align: center;
 }
-.carousel__text {
-    padding-top: 40%;
-}
 
-.dots {
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 300px;
-    height: 50px;
-}
 #carousel__card .dots p {
     color: gray;
     font-size: 24px;
@@ -68,19 +81,29 @@
         display: block;
     }
     #carousel__card {
-        display: flex;
-        background: url(../src/carousel-desktop.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        z-index: 112;
         height: 100vh;
     }
-    #carousel__card h3 {
-        align-self: flex-end;
-        text-align: right;
+    .carousel__text p {
+        font: normal normal normal 41px/52px Yantramanav;
+        letter-spacing: 0.85px;
+        padding-bottom: 24px;
+    }
+    .carousel__text h3 {
+        text-align: center;
+    }
+    .carousel__img {
+        height: 100vh;
+    }
+    .carousel__img img {
+        position: absolute;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
     }
     .carousel__text {
-        padding-top: 35%;
+        position: absolute;
+        text-align: center;
+        z-index: 999;
     }
 }
 
@@ -90,6 +113,10 @@
         max-height: 130vh;
     }
     #carousel__card {
+        height: 130vh;
+        max-height: 130vh;
+    }
+    #carousel__img {
         height: 130vh;
         max-height: 130vh;
     }
