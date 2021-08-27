@@ -106,18 +106,3 @@
         z-index: 999;
     }
 }
-
-@media (min-width: 768px) and (max-height: 700px) {
-    .carousel {
-        height: 130vh;
-        max-height: 130vh;
-    }
-    #carousel__card {
-        height: 130vh;
-        max-height: 130vh;
-    }
-    #carousel__img {
-        height: 130vh;
-        max-height: 130vh;
-    }
-}

@@ -119,3 +119,13 @@
         flex: 0;
     }
 }
+
+@media (min-width: 768px) and (max-height: 700px) {
+    .modal__form p {
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    .modal__form {
+        height: 600px;
+    }
+}
